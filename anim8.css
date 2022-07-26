@@ -151,3 +151,44 @@
   }
 }
 
+/* UTILITY CLASSES */
+/* speed  */
+._slow{
+  animation-duration: 2s;
+}
+._slower{
+  animation-duration: 4s;
+}
+._fast{
+  animation-duration: 800ms;
+}
+._faster{
+  animation-duration: 400ms;
+}
+
+/* delay */
+._delay-2s{
+  animation-delay: 2s;
+}
+._delay-3s{
+  animation-delay: 3s;
+}
+._delay-4s{
+  animation-delay: 4s;
+}
+._delay-5s{
+  animation-delay: 5s;
+}
+/* repeat */
+._repeat-1{
+  animation-iteration-count: 1;
+}
+._repeat-2{
+  animation-iteration-count: 2;
+}
+._repeat-3{
+  animation-iteration-count: 3;
+}
+._repeat-infinite{
+  animation-iteration-count: infinite;
+}
