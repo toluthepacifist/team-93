@@ -154,28 +154,15 @@
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
-@keyframes tada {
-  10% {
-    transform: scaleX(0.7);
-  }
-  30% {
-    transform: rotateX(10deg);
-  }
-  40% {
-    transform: rotateZ(-10deg);
-  }
-  60% {
-    transform: rotateZ(10deg);
-  }
-  80% {
-    transform: rotateZ(-10deg);
-  }
-  90% {
-    transform: rotateZ(10deg);
-  }
-  100% {
-    transform: rotateZ(-10deg);
-  }
+  @keyframes tada{
+    10% {transform: scaleX(0.7);}
+    30% {transform: rotateX(10deg);}
+    40% {transform: rotateZ(-10deg);}
+    60% {transform: rotateZ(10deg);}
+    80% {transform: rotateZ(-10deg);}
+    90% {transform: rotateZ(10deg);}
+    100% {transform: rotateZ(-10deg)}
+
 }
 ._shakeSide {
   animation-name: shakeSide;
