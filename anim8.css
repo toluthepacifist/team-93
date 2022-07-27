@@ -1,6 +1,4 @@
-
 /* AS YOU START FEEL FREE TO BREAK IT WE HAVE NOTES TO GUIDE YOU --WELCOME DEVELOPER... */
-
 
 ._moveUp {
   /* for use in the keyframes */
@@ -150,59 +148,155 @@
     background-color: red;
   }
 }
-._tada{
+._tada {
   animation-name: tada;
   animation-iteration-count: 1;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
-  @keyframes tada{
-    10% {gtransform: scaleX(0.7);}
-    30% {transform: rotateX(10deg);}
-    40% {transform: rotateZ(-10deg);}
-    60% {transform: rotateZ(10deg);}
-    80% {transform: rotateZ(-10deg);}
-    90% {transform: rotateZ(10deg);}
-    100% {transform: rotateZ(-10deg)}
+@keyframes tada {
+  10% {
+    transform: scaleX(0.7);
   }
+  30% {
+    transform: rotateX(10deg);
+  }
+  40% {
+    transform: rotateZ(-10deg);
+  }
+  60% {
+    transform: rotateZ(10deg);
+  }
+  80% {
+    transform: rotateZ(-10deg);
+  }
+  90% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(-10deg);
+  }
+}
+._shakeSide {
+  animation-name: shakeSide;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+@keyframes shakeSide {
+  from {
+    transform: translateX(10px);
+  }
+  10% {
+    transform: translateX(-10px);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  30% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+  70% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+._shakeUpDown {
+  animation-name: shakeUpDown;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+@keyframes shakeUpDown {
+  from {
+    transform: translateY(10px);
+  }
+  10% {
+    transform: translateY(-10px);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(10px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
 /* UTILITY CLASSES */
 /* speed  */
-._slow{
+._slow {
   animation-duration: 2s;
 }
-._slower{
+._slower {
   animation-duration: 4s;
 }
-._fast{
+._fast {
   animation-duration: 800ms;
 }
-._faster{
+._faster {
   animation-duration: 400ms;
 }
 
 /* delay */
-._delay-2s{
+._delay-2s {
   animation-delay: 2s;
 }
-._delay-3s{
+._delay-3s {
   animation-delay: 3s;
 }
-._delay-4s{
+._delay-4s {
   animation-delay: 4s;
 }
-._delay-5s{
+._delay-5s {
   animation-delay: 5s;
 }
+
 /* repeat */
-._repeat-1{
+._repeat-1 {
   animation-iteration-count: 1;
 }
-._repeat-2{
+._repeat-2 {
   animation-iteration-count: 2;
 }
-._repeat-3{
+._repeat-3 {
   animation-iteration-count: 3;
 }
-._repeat-infinite{
+._repeat-infinite {
   animation-iteration-count: infinite;
 }
