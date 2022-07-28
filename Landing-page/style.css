@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 header{
     display: flex;
@@ -27,8 +28,8 @@ ul:last-child{
 }
 
 .nav-link:hover{
-    color: yellow;
-    border-bottom: 3px solid black;
+    color: blue;
+    border-bottom: 3px solid blue;
     padding-bottom: 5px;
 }
 
@@ -48,11 +49,11 @@ ul:last-child{
     text-align: center;
     width: 45%;
     height: 50px;
-    border-radius: 20px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     border: 1px solid black;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 input[type="text"]{ 
