@@ -59,13 +59,15 @@ input[type="text"]{
     padding: 10px;
     border: none;
 }
+footer{
+    background-color: rgb(75, 75, 172);
+    color: white;
+}
 .footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    background-color: rgb(75, 75, 172);
-    color: white;
     padding: 40px;
 }
 address a{
@@ -90,9 +92,6 @@ address a:hover{
     height: 30%;
 }
 .footer-paragraph{
-    background-color:  rgb(75, 75, 172);
-    margin: 0;
     text-align: center;
-    color: white;
     padding-bottom: 20px;
 }
