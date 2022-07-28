@@ -59,7 +59,7 @@ input[type="text"]{
     padding: 10px;
     border: none;
 }
-footer:not(:last-child){
+.footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
