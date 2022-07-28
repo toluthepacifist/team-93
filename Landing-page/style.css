@@ -89,9 +89,10 @@ address a:hover{
     margin-top: 20px;
     height: 30%;
 }
-footer p{
-    position: absolute;
-    bottom: 0;
+.footer-paragraph{
+    background-color:  rgb(75, 75, 172);
+    margin: 0;
     text-align: center;
-    padding-bottom: 0;
+    color: white;
+    padding: 20px;
 }
