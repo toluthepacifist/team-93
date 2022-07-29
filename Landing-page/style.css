@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 50px;
+  margin-top: 30px;
 }
 header {
   display: flex;
@@ -10,13 +16,15 @@ header {
   align-items: center;
   margin-top: 10px;
 }
-img {
-  margin-left: 20px;
+/* to put them at the center */
+#navbar ul {
+  display: block;
+  margin-left: 150px;
 }
 #navbar ul li {
   display: inline-block;
   list-style: none;
-  margin: 0 40px;
+  margin:  30px;
 }
 
 .nav-link {
@@ -31,12 +39,20 @@ img {
 }
 
 .nav-btn {
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 0.5px solid black;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid #00325b;
   margin-right: 5px;
 }
+#sign-up{
+  color: #fff;
+  background-color: #00325b;
+}
+#sign-in{
+  background-color: #fff;
+  color: #00325b;
 
+}
 #form {
   display: flex;
   justify-content: center;
@@ -59,11 +75,34 @@ input[type="text"] {
   padding: 10px;
   border: none;
 }
+#welcome-section{
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+#welcome-section img{
+  width: 30%;
+  margin-left: 350px;
+}
+#welcome-section div{
+  width: 35%;
+  line-height: 1.5;
+}
+#welcome-section div h1{
+  margin-bottom: 30px;
+  font-weight: bolder;
+  color: #00325b;
+}
+#welcome-section div p{
+  margin-bottom: 50px;
+}
 .welcome-button {
   text-align: center;
   padding: 20px 60px;
   background: #00325b;
-  border-radius: 8px;
+  border: none;
+  border-radius: 10px;
   color: #fff;
   font-weight: bolder;
   margin-top: 20px;
@@ -72,6 +111,8 @@ input[type="text"] {
 footer {
   background-color: #00325b;
   color: white;
+  margin: -50px;
+  margin-top: 0;
 }
 .footer {
   display: flex;
