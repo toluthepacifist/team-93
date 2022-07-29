@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 *{
     box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 header{
     display: flex;
@@ -60,26 +61,35 @@ input[type="text"]{
     border: none;
 }
 footer{
-    background-color: rgb(75, 75, 172);
+    background-color: #00325B;
     color: white;
 }
 .footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
-    padding: 40px;
+    padding: 15px 0;
+}
+.footer h4{
+    font-weight: 500;
+    font-size: x-large;
 }
 address a{
-    text-decoration: none;
     display: block;
     margin-bottom: 10px;
     transition: all 0 3s;
-    color: white;
+    color: #E8E8E8;
+    text-decoration: none;
+    font-weight: 400;
 }
+.websites{
+    text-decoration: underline;
+}
+
 address a:hover{
     padding-left: 10px;
-    color: blue;
+    color: black;
 }
 .profile-link{
     display: flex;
@@ -87,11 +97,25 @@ address a:hover{
     margin-top: 10px;
 }
 .social img{
+    font-size: 5100px;
     background-color: white;
-    margin-top: 20px;
-    height: 30%;
+    margin-top: 40px;
+   margin-bottom: 5px;
+}
+.social a{
+    font-size: x-large;
+}
+.social a:hover{
+    font-size: x-large;
+    padding-left: 0;
 }
 .footer-paragraph{
     text-align: center;
     padding-bottom: 20px;
+}
+light{
+    color: #E8E8E8;
+}
+strong{
+    font-weight: 500;
 }
