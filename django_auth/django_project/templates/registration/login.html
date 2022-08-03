@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<style>
+  *{
+    background: darkgrey;
+  }
+  form{
+    margin: 0 auto;
+    width: 50%;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background: grey;
+    margin-top: 20%;
+  }
+  button{
+    margin: 0 auto;
+    border-radius: 1em;
+    background: green;
+    padding: 1em;
+    border: 1px solid grey;
+    margin-left: 40%;
+    text-align: center;
+  }
+  h2{
+    background: grey;
+    text-align: center;
+  }
+  p, a{
+    background: grey;
+  }
+  .additional{
+    font-size: 1.4em;
+    text-align: center;
+  }
+</style>
+<form method="post">
+  <h2>Log In</h2>
+  {% csrf_token %}
+  {% comment %} generate django form {% endcomment %}
+  {{ form.as_p }}
+  <button type="submit">Log In</button>
+  <p>Don't have an account? <a href="{% url 'sign up' %}"> sign up</a></p>
+  <p class="additional">Or</p>
+  <p>Continue with:
+  <a href="#">Facebook</a> Or <a href="#">Google</a></p>
+</form>
+{% endblock %}

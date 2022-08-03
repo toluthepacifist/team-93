@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <style>
+    *{
+      background: darkgrey;
+    }
+    form{
+      margin: 0 auto;
+      width: 50%;
+      /* Form outline */
+      padding: 1em;
+      border: 1px solid #CCC;
+      border-radius: 1em;
+      background: grey;
+      margin-top: 20%;
+    }
+    button{
+      margin: 0 auto;
+      border-radius: 1em;
+      background: green;
+      padding: 1em;
+      border: 1px solid grey;
+      margin-left: 40%;
+      text-align: center;
+    }
+    h2{
+      background: grey;
+      text-align: center;
+    }
+    p, a{
+      background: grey;
+    }
+  </style>
+  <form method="post">
+    <h2>Sign up</h2>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+    <p>Already have an account? <a href="{% url 'login' %}">Log In</a></p>
+  </form>
+{% endblock %}
