@@ -5,31 +5,31 @@ from django.contrib.auth import authenticate
 
 
 class UserRegistrationForm(UserCreationForm):
-    first_name = forms.CharField(max_length=100,
+    first_name = forms.CharField(label="First Name", max_length=100,
                                  required=True,
                                  widget=forms.TextInput(attrs={'placeholder': 'First Name', 'style': 'width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;', 'class': 'form-control',}))
-    last_name = forms.CharField(max_length=100,
+    last_name = forms.CharField(label="Last Name", max_length=100,
                                 required=True,
                                 widget=forms.TextInput(attrs={'placeholder': 'Last Name', 'style': 'width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;',
                                                               'class': 'form-control',
                                                               }))
-    username = forms.CharField(max_length=100,
+    username = forms.CharField(label="Username", max_length=100,
                                required=True,
                                widget=forms.TextInput(attrs={'placeholder': 'Username', 'style': 'width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;',
                                                              'class': 'form-control',
                                                              }))
-    email = forms.EmailField(required=True,
-                             widget=forms.TextInput(attrs={'placeholder': 'Email', 'style': 'width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;',
+    email = forms.EmailField(label="Email", required=True,
+                             widget=forms.EmailInput(attrs={'placeholder': 'Email', 'style': 'width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;',
                                                            'class': 'form-control',
                                                            }))
-    password1 = forms.CharField(max_length=50,
+    password1 = forms.CharField(label="Password", max_length=50,
                                 required=True,
                                 widget=forms.PasswordInput(attrs={'placeholder': 'Password', 'style': 'width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;',
                                                                   'class': 'form-control',
                                                                   'data-toggle': 'password',
                                                                   'id': 'password',
                                                                   }))
-    password2 = forms.CharField(max_length=50,
+    password2 = forms.CharField(label="Confirm", max_length=50,
                                 required=True,
                                 widget=forms.PasswordInput(attrs={'placeholder': 'Confirm Password', 'style': 'width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;',
                                                                   'class': 'form-control',
@@ -44,6 +44,10 @@ class UserRegistrationForm(UserCreationForm):
 class LoginForm(forms.Form):
     email = forms.EmailField(label="email", widget=forms.EmailInput(attrs={'class':'email-input'}))
     password = forms.CharField(label="Password", widget=forms.PasswordInput(attrs={'class':'password-input'}))
+    
+    class Meta:
+            model = User
+            fields = ['email', 'password']
 
     def clean(self, *args, **kwargs):
         email = self.cleaned_data.get('email')
