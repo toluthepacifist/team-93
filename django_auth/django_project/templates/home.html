@@ -4,9 +4,9 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-{% if user.is_authenticated %}
+{% comment %} {% if user.is_authenticated %} {% endcomment %}
   {% comment %} Hi {{ user.username }}! {% endcomment %}
-  <title>Library</title>
+  {% comment %} <title>Library</title>
   <style>
     *{
         background: grey;
@@ -30,7 +30,7 @@
 <h2>Team93</h2>
 <p>Animation Library</p>
 <p><a href="{% url 'logout' %}">Log Out</a></p>
-{% else %}
+{% else %} {% endcomment %}
 <title>Home</title>
 <script src="https://kit.fontawesome.com/0a96adf822.js" crossorigin="anonymous"></script>
 <style>
@@ -304,5 +304,5 @@
   /* Event listener */
   document.addEventListener("click", closeSubmenu, false);
 </script> {% endcomment %}
-{% endif %}
+{% comment %} {% endif %} {% endcomment %}
 {% endblock %}
