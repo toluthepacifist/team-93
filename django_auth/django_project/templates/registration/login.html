@@ -3,9 +3,12 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   *{
     background: white;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
   }
   form{
     margin: 0 auto;
@@ -18,40 +21,44 @@
     margin-top: 5%;
     background: white;
     float: right;
-    margin-right: 7%;
+    margin-right: 12%;
   }
   .side{
     float: left;
-    background: purple;
-    background-image: linear-gradient(315deg, rgb(132, 49, 204) 0%, hsl(0, 76%, 89% ) 100%);
+    background: transparent;
+    flex: 20%;
+    background-image: url("https://raw.githubusercontent.com/toluthepacifist/team-93/e85184fb42c132deca2472085ad14baf57181dab/NEW%20DESIGN/Image/Blured%20background(Login).svg");
     height: 85%;
-    width: 27%;
+    width: 24.2%;
     border-radius: 0.6em;
-    margin-left: 22%;
+    margin-left: 25%;
     margin-top: 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .side1{
     background: transparent;
-    font-size: 2.3em;
+    font-size: 2.2em;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     color: white;
-    margin: 20%;
+    margin-left: 7%;
+    margin-right: 28%;
   }
   .p{
     background: transparent;
     font-size: 0.9em;
     text-align: center;
-    margin: 4%;
+    margin-top: 4%;
+    margin-left: 7%;
+    margin-right: 17%;
     color: white;
   }
   button{
     margin: 0 auto;
     border-radius: 0.6em;
-    background: #3ca7cf;
+    background: #007ad2;
     padding: 1em;
-    width: 100%;
+    width: 104%;
     border: 1px solid grey;
     margin-top: 7%;
     text-align: center;
@@ -68,7 +75,7 @@
   }
   input{
     background: darkgrey;
-    width: 100%;
+    width: 104%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -81,7 +88,7 @@
   .or{
     background: white;
     bottom: 55%;
-    left: 71%;
+    left: 68.761%;
     position: absolute;
   }
   .vl {
@@ -96,13 +103,13 @@
   #main{
     position: absolute;
     width: 16.5%;
-    left: 53.5%;
+    left: 51.1%;
     bottom: 59.5%;
   }
   #main2{
     position: absolute;
     width: 16.5%;
-    right: 9.5%;
+    right: 11.85%;
     bottom: 59.5%;
   }
   .links{
@@ -113,7 +120,8 @@
     text-align: left;
   }
   .link1{
-    margin-left: 68%;
+    margin-left: 72.5%;
+    color: black;
   }
   .hr1{
     width: 35%;
@@ -144,7 +152,7 @@
     button{
       margin: 0 auto;
       border-radius: 0.6em;
-      background: #3ca7cf;
+      background: #007ad2;
       padding: 1em;
       width: 100%;
       border: 1px solid grey;
@@ -226,14 +234,18 @@
 </style>
 <div>
   <div class="side">
-    <h2 class="side1">We are glad you're back!</h2>
+    <img src="https://raw.githubusercontent.com/toluthepacifist/team-93/e85184fb42c132deca2472085ad14baf57181dab/NEW%20DESIGN/Image/LOGO%20(1).svg" alt="LOGO" id="logo" width="10%" height="10%" style="background: transparent; color: transparent; margin: 7%">
+    <h2 class="side1">We're glad you're back!</h2>
     <p class="p">Pick off where you left off. Your download history, saved items and searches are all intact, simply log in</p>
+    <div style="background: transparent;">
+      <img src="https://raw.githubusercontent.com/toluthepacifist/team-93/e85184fb42c132deca2472085ad14baf57181dab/NEW%20DESIGN/Image/Arrow%20swirly.svg" alt="LOGO" id="logo" width="60%" height="20%" style="background: transparent; color: transparent; margin-left: 20%; margin-top: 10%;">
+    </div>
   </div>
 </div>
 <div>
 <form action="" method="post" autocomplete="off">
   <h2>Log In</h2>
-  <p>Don't have an account? <a href="{% url 'sign up' %}" style="color: #3ca7cf;"> Sign up</a></p>
+  <p>Don't have an account? <a href="{% url 'sign up' %}" style="color: #007ad2;"> Sign up</a></p>
   <p id="main1">Log in with socials:</p>
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
